@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/besha.github.io/_next/static/chunks/b2f7421ba117e090.js","/besha.github.io/_next/static/chunks/27749841b463623e.js","/besha.github.io/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
 3:I[37457,["/besha.github.io/_next/static/chunks/b2f7421ba117e090.js","/besha.github.io/_next/static/chunks/27749841b463623e.js","/besha.github.io/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-0:{"buildId":"qWnl5uCYnc_4QX4XO8Ive","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"za3-V0i3Zd47Tp5FkfWMO","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
