@@ -19,9 +19,7 @@ jobs:
         run: bun install
 
       - name: Build and Export
-        env:
-          EXPORT: true
-        run: bun run build
+        run: bun run build:static
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
