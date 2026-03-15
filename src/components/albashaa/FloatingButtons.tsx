@@ -1,11 +1,28 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle } from "lucide-react";
 
 export default function FloatingButtons() {
+  const [isNearBottom, setIsNearBottom] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+      setIsNearBottom(scrollPosition >= pageHeight - 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  if (isNearBottom) return null;
+
   return (
-    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-50 flex flex-col gap-2 md:gap-3">
+    <div className="fixed bottom-4 left-4 md:bottom-6 md:left-6 z-40 flex flex-col gap-2 md:gap-3">
       {/* WhatsApp Button */}
       <motion.a
         href="https://wa.me/201221315072"
