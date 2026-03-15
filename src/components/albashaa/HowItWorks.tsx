@@ -15,25 +15,25 @@ function StepItem({ step, index }: { step: Step; index: number }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.15 }}
-      className="relative flex items-start gap-6"
+      className="relative flex items-start gap-4 md:gap-6"
     >
       {/* Number Circle */}
       <div className="relative z-10 flex-shrink-0">
-        <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-amber-500/25">
+        <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl md:rounded-2xl flex items-center justify-center text-white text-lg md:text-2xl font-bold shadow-lg shadow-amber-500/25">
           {step.num}
         </div>
       </div>
 
       {/* Content */}
-      <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 relative">
+      <div className="flex-1 bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border border-gray-100 relative">
         {index < steps.length - 1 && (
-          <div className="absolute top-8 -bottom-8 right-8 w-0.5 bg-gradient-to-b from-amber-300 to-transparent h-full" />
+          <div className="absolute top-6 md:top-8 -bottom-6 md:-bottom-8 right-6 md:right-8 w-0.5 bg-gradient-to-b from-amber-300 to-transparent h-full hidden md:block" />
         )}
-        <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-        <p className="text-gray-600">{step.text}</p>
+        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">{step.title}</h3>
+        <p className="text-sm md:text-base text-gray-600">{step.text}</p>
       </div>
     </motion.div>
   );
@@ -83,7 +83,7 @@ export default function HowItWorks() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-xl md:rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
               src="/images/tribal-council.png"
@@ -92,9 +92,9 @@ export default function HowItWorks() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-amber-900/50 to-transparent" />
-            <div className="absolute bottom-0 right-0 left-0 p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">المجلس القبلي</h3>
-              <p className="text-white/80">نحترم التقاليد والأعراف في حل النزاعات</p>
+            <div className="absolute bottom-0 right-0 left-0 p-4 md:p-6">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">المجلس القبلي</h3>
+              <p className="text-white/80 text-sm md:text-base">نحترم التقاليد والأعراف في حل النزاعات</p>
             </div>
           </motion.div>
         </div>

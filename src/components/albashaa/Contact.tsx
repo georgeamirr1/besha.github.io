@@ -64,7 +64,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
+            className="space-y-4 md:space-y-6"
           >
             {contactInfo.map((item, index) => (
               <motion.a
@@ -75,14 +75,14 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                className="flex items-center gap-4 p-5 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors group"
+                className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-gray-50 rounded-xl md:rounded-2xl hover:bg-gray-100 transition-colors group"
               >
-                <div className={`w-14 h-14 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform`}>
-                  <item.icon className="w-6 h-6 text-white" />
+                <div className={`w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform`}>
+                  <item.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
                 <div>
-                  <div className="text-sm text-gray-500 mb-1">{item.title}</div>
-                  <div className="text-lg font-bold text-gray-900">{item.value}</div>
+                  <div className="text-sm text-gray-500 mb-0.5 md:mb-1">{item.title}</div>
+                  <div className="text-base md:text-lg font-bold text-gray-900">{item.value}</div>
                 </div>
               </motion.a>
             ))}
@@ -92,13 +92,13 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.6 }}
-              className="p-5 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl text-white"
+              className="p-4 md:p-5 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl md:rounded-2xl text-white"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <Clock className="w-6 h-6" />
-                <span className="font-bold text-lg">أوقات العمل</span>
+              <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
+                <Clock className="w-5 h-5 md:w-6 md:h-6" />
+                <span className="font-bold text-base md:text-lg">أوقات العمل</span>
               </div>
-              <div className="space-y-2 text-white/90">
+              <div className="space-y-1 md:space-y-2 text-white/90 text-sm md:text-base">
                 <div className="flex justify-between">
                   <span>السبت - الخميس</span>
                   <span className="font-medium">9:00 ص - 9:00 م</span>
@@ -116,10 +116,10 @@ export default function Contact() {
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-6"
+            className="space-y-4 md:space-y-6"
           >
             {/* Entrance Image */}
-            <div className="relative h-48 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-40 md:h-48 rounded-xl md:rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/images/entrance.png"
                 alt="موقع البشعة"
@@ -127,13 +127,13 @@ export default function Contact() {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 to-transparent" />
-              <div className="absolute bottom-4 right-4">
-                <p className="text-white font-bold text-lg">أهلاً بكم</p>
+              <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4">
+                <p className="text-white font-bold text-base md:text-lg">أهلاً بكم</p>
               </div>
             </div>
 
             {/* Map */}
-            <div className="h-[300px] rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <div className="h-[250px] md:h-[300px] rounded-xl md:rounded-2xl overflow-hidden shadow-xl border border-gray-200">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456789.0123456789!2d30.0!3d30.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiTiAzMMKwMDAnMDAuMCJF!5e0!3m2!1sar!2seg!4v1699999999999!5m2!1sar!2seg"
                 width="100%"

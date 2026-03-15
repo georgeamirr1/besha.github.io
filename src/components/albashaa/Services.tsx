@@ -64,10 +64,10 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 grid md:grid-cols-2 gap-8"
+          className="mt-12 md:mt-16 grid md:grid-cols-2 gap-6 md:gap-8"
         >
           {/* Quran Oath Image */}
-          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl group">
+          <div className="relative h-48 md:h-80 rounded-xl md:rounded-2xl overflow-hidden shadow-xl group">
             <Image
               src="/images/quran-oath.png"
               alt="اليمين على المصحف"
@@ -75,14 +75,14 @@ export default function Services() {
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-            <div className="absolute bottom-0 right-0 left-0 p-6">
-              <h3 className="text-xl font-bold text-white mb-2">اليمين على المصحف</h3>
-              <p className="text-white/80">أداء اليمين الشرعية على المصحف الشريف لإثبات الحقوق</p>
+            <div className="absolute bottom-0 right-0 left-0 p-4 md:p-6">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">اليمين على المصحف</h3>
+              <p className="text-white/80 text-sm md:text-base">أداء اليمين الشرعية على المصحف الشريف لإثبات الحقوق</p>
             </div>
           </div>
 
           {/* Justice Scales Image */}
-          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl group">
+          <div className="relative h-48 md:h-80 rounded-xl md:rounded-2xl overflow-hidden shadow-xl group">
             <Image
               src="/images/justice-scales.png"
               alt="ميزان العدل"
@@ -90,9 +90,9 @@ export default function Services() {
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-            <div className="absolute bottom-0 right-0 left-0 p-6">
-              <h3 className="text-xl font-bold text-white mb-2">العدل والإنصاف</h3>
-              <p className="text-white/80">الفصل العادل في النزاعات بما يرضي جميع الأطراف</p>
+            <div className="absolute bottom-0 right-0 left-0 p-4 md:p-6">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">العدل والإنصاف</h3>
+              <p className="text-white/80 text-sm md:text-base">الفصل العادل في النزاعات بما يرضي جميع الأطراف</p>
             </div>
           </div>
         </motion.div>
