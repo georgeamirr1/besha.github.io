@@ -69,9 +69,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" suppressHydrationWarning>
+    <html lang="ar" dir="rtl" suppressHydrationWarning className="overflow-x-hidden">
       <body
-        className={`${amiri.variable} ${tajawal.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${amiri.variable} ${tajawal.variable} font-sans antialiased bg-background text-foreground overflow-x-hidden`}
       >
         {children}
         <Toaster />
