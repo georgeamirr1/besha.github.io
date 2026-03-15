@@ -12,13 +12,14 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[100dvh] flex items-center w-full max-w-full overflow-x-hidden">
+    <section id="hero" className="relative min-h-[100dvh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src="/images/hero-bg.png"
           alt="ميزان العدل"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />

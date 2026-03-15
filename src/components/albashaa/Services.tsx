@@ -30,7 +30,7 @@ export default function Services() {
   const { ref, inView } = useScrollReveal();
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-gray-50 overflow-x-hidden">
+    <section id="services" className="py-20 md:py-28 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div
