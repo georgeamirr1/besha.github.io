@@ -113,9 +113,6 @@ export default function Footer() {
             <p>
               © {new Date().getFullYear()} البشعة للتحكيم وكشف الحقيقة. جميع الحقوق محفوظة.
             </p>
-            <p>
-              صُمم بـ ❤️ في مصر
-            </p>
           </div>
         </div>
       </div>
