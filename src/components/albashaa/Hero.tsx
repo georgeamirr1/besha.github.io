@@ -12,7 +12,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[100dvh] flex items-center overflow-x-hidden">
+    <section id="hero" className="relative min-h-[100dvh] flex items-center w-full max-w-full overflow-x-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
