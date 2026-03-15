@@ -9,7 +9,7 @@ import FloatingButtons from "@/components/albashaa/FloatingButtons";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col overflow-x-hidden">
       <Navbar />
       <Hero />
       <Services />
