@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: process.env.EXPORT ? "export" : "standalone",
-  /* config options here */
+  basePath: process.env.EXPORT ? "/besha.github.io" : "",
+  images: {
+    unoptimized: process.env.EXPORT ? true : undefined,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
